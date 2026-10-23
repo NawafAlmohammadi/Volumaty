@@ -1,0 +1,11 @@
+customtkinter==5.2.2
+pycaw==20251023
+keyboard==0.13.5
+pystray==0.19.5
+Pillow==12.1.1
+pywin32==311
+comtypes==1.4.16
+psutil==7.2.2
+darkdetect==0.8.0
+packaging==24.2
+pyinstaller==6.19.0

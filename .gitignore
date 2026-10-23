@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+.test*/
+*.log
+*.lnk
+*.egg-info/
+test-results/
+test-diagnostics*.json
+output/
+.superpowers/
+release-artifacts/
+*.zip
