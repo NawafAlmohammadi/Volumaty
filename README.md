@@ -6,6 +6,8 @@
 
 A Windows mixer that turns standard keyboard volume keys and knobs into per-app controls.
 
+**License:** free use, modification and free sharing for eligible non-Company users. **Every Company requires prior written permission, regardless of size. Selling original or modified versions also requires prior written permission.** See [LICENSE](LICENSE), [the licensing guide](LICENSING.md), or [request permission](https://github.com/NawafAlmohammadi/Volumaty/issues/new?template=licensing_request.yml).
+
 [Download for Windows](https://github.com/NawafAlmohammadi/Volumaty/releases/latest) · [Report a bug](https://github.com/NawafAlmohammadi/Volumaty/issues/new?template=bug_report.yml) · [Changelog](CHANGELOG.md)
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows)
@@ -134,6 +136,8 @@ This creates a silent session in the test process, verifies audio controls, then
 | `app.py` | Lifecycle, logging and diagnostics |
 
 ## Contributing and dependencies
+
+Volumaty is **source-available** under the custom **Volumaty Community License 1.0**. It is not an OSI-approved open-source project. The default grant does not cover use or development on behalf of a Company, even when the Software is not sold. Preserve LICENSE and attribution when sharing permitted copies or modifications. Third-party dependencies retain their own licenses.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Included dependency license texts are in `licenses/`.
 

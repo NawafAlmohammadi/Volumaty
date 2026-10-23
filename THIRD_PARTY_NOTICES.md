@@ -20,4 +20,4 @@ Volumaty is built with Python and third-party libraries. Their original notices 
 
 For the exact version used in this release, see `licenses/VERSIONS.txt`. Source distributions for dependencies are available from the linked upstream projects and PyPI. To rebuild with a replacement dependency, create a Python environment, install the replacement, and run `build.ps1` as described in the README.
 
-The bundled application icon comes from the original Volumaty application supplied by its author. No separate license has been selected for Volumaty's own source in this release.
+The bundled application icon comes from the original Volumaty application supplied by its author. Volumaty's original code and project materials are offered under the custom Volumaty Community License 1.0 in the root LICENSE file. Those terms apply only to the Licensor's own material and do not replace or restrict third-party component licenses.

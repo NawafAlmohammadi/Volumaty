@@ -17,7 +17,7 @@ def main():
     archive = destination / f'Volumaty-{__version__}-windows-x64.zip'
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED) as output:
         output.write(executable, executable.name)
-        for name in ('README.md', 'CHANGELOG.md', 'THIRD_PARTY_NOTICES.md', 'RELEASE_NOTES.md', 'VERIFICATION.md'):
+        for name in ('README.md', 'CHANGELOG.md', 'THIRD_PARTY_NOTICES.md', 'RELEASE_NOTES.md', 'VERIFICATION.md', 'LICENSE', 'LICENSING.md'):
             output.write(ROOT / name, name)
         for directory in ('licenses', 'docs/images'):
             for path in sorted((ROOT / directory).rglob('*')):

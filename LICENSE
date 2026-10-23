@@ -1,0 +1,154 @@
+Volumaty Community License 1.0
+SPDX-License-Identifier: LicenseRef-Volumaty-Community-1.0
+
+Copyright (c) 2026 NawafAlmohammadi. All rights reserved except as
+expressly granted below.
+
+This is a custom source-available license, not an OSI-approved
+open-source license.
+
+1. Scope and definitions
+
+"Licensor" means the copyright holder publishing Volumaty through the
+GitHub account NawafAlmohammadi:
+https://github.com/NawafAlmohammadi
+
+"Software" means the original Volumaty source code, executables,
+documentation and other original project materials offered under this
+license, including copies, modifications and derivative works to the
+extent they contain or are based on that material. Independently
+licensed third-party components are excluded as explained in section 6.
+
+"Company" means any incorporated or unincorporated for-profit business
+organization, including a corporation, limited liability company,
+partnership or sole proprietorship, regardless of its size, revenue,
+number of employees or jurisdiction.
+
+"Company Use" means using, installing, copying, evaluating, modifying,
+integrating, hosting, deploying or distributing the Software by a
+Company, or by an individual or contractor on behalf of, for the
+operations of, or as part of work for a Company. It includes internal
+use, testing and development, even if no copy is sold. An employee's
+independent personal use, unrelated to work for a Company, is not
+Company Use merely because that person is employed.
+
+"Sale" means selling, licensing for a fee, renting, leasing or otherwise
+charging for a copy of or access to the Software, including a modified
+version. It includes incorporating the Software into a paid product or
+offering it as part of a paid hosted service. Calling a payment a
+donation does not avoid this definition if the payment is required to
+receive or access the Software. A genuinely voluntary donation with no
+effect on access is not a Sale, but does not authorize Company Use.
+
+2. Permission without a separate agreement
+
+Subject to all the conditions of this license, the Licensor grants an
+individual or entity that is not a Company a worldwide, non-exclusive,
+royalty-free copyright license to use, run, study, reproduce, modify
+and make derivative works of the Software, and to share copies of the
+Software or modified versions free of charge. This grant also covers
+non-Company organizations when their activity is not Company Use or
+a Sale.
+
+This grant does not permit Company Use or a Sale. Permission to modify
+does not remove these restrictions from copies or derivative works.
+No Company receives a license under this grant, and acting through an
+individual or another organization does not exempt Company Use.
+
+3. Prior written permission required
+
+Every Company must obtain the Licensor's prior written permission for
+Company Use, regardless of the Company's size. Any person or entity
+must obtain the Licensor's prior written permission before a Sale.
+
+Request permission before beginning the restricted activity through:
+https://github.com/NawafAlmohammadi/Volumaty/issues/new?template=licensing_request.yml
+
+The request must identify the requester and proposed activity. A request,
+issue submission, silence, public availability of the repository, or a
+download is not permission. Permission must be expressly granted in
+writing by the Licensor, for example by the NawafAlmohammadi account or
+in a separate signed agreement, and applies only to its stated scope.
+The Licensor may grant permission free of charge, charge a fee, impose
+additional agreed terms, or decline. No automatic Sale or Company Use
+permission is created by these terms.
+
+4. Redistribution and modifications
+
+For every distribution permitted under this license, including one
+authorized by section 3, you must comply with the conditions below
+unless the Licensor expressly varies conditions relating to its own
+rights in the applicable written permission. Such a variation cannot
+waive obligations under independently applicable third-party licenses.
+Except for such an express written variation, you must:
+
+(a) Include this complete license and preserve the Licensor's copyright
+    notices, attribution and applicable third-party notices, whether
+    distributing source code or an executable.
+(b) Identify material modifications and avoid presenting a modified
+    version as an official release endorsed by the Licensor.
+(c) Keep the rights in the original Software and material derived from
+    it subject to this license. Do not grant recipients Company Use or
+    Sale rights that you have not obtained from the Licensor, remove
+    these conditions by relicensing, or claim exclusive ownership of
+    the original Software. Each recipient receives any permission in
+    the original Software directly from the Licensor under these terms.
+
+You retain ownership of your original contributions. This license does
+not require you to publish private modifications or transfer ownership
+of your contributions. It does not restrict unrelated software merely
+because that software is distributed alongside the Software.
+
+5. Reserved rights and exceptions
+
+Only the rights expressly stated in this license are granted. No rights
+to the Licensor's trademarks, logos or endorsement are granted, except
+to identify the Software truthfully and preserve required attribution.
+Separate permission may cover only rights the Licensor controls.
+
+Nothing in this license limits rights that cannot be restricted under
+applicable law, including applicable statutory exceptions, or rights
+already granted independently under another valid license or agreement.
+In particular, this license does not withdraw rights granted under
+GitHub's Terms of Service for hosting, viewing or forking the public
+repository through GitHub's functionality. Those platform rights do not
+by themselves create permission under this license for deployment,
+Company Use or a Sale outside their independently granted scope.
+
+6. Third-party components
+
+Third-party libraries, bundled dependencies and third-party materials
+remain governed by their own licenses. See THIRD_PARTY_NOTICES.md and
+the licenses/ directory. The Company Use and Sale restrictions in this
+license do not apply to those components independently, do not replace
+their licenses, and do not reduce rights granted by those licenses.
+This license applies only to rights in the Software that the Licensor
+is entitled to license.
+
+7. Termination
+
+The permissions granted by this license end automatically if you breach
+its conditions. Upon termination, stop activities requiring those
+permissions, unless separately authorized by law or written agreement.
+Permissions may be reinstated by the Licensor in writing. Termination
+of your permissions does not itself terminate a compliant recipient's
+direct license from the Licensor.
+
+8. No warranty; limitation of liability
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE AND NON-INFRINGEMENT. TO THE SAME EXTENT, THE LICENSOR AND
+CONTRIBUTORS ARE NOT LIABLE FOR CLAIMS, DAMAGES OR OTHER LIABILITY
+ARISING FROM THE SOFTWARE OR ITS USE, WHETHER IN CONTRACT, TORT OR
+OTHERWISE. THESE TERMS DO NOT EXCLUDE LIABILITY THAT CANNOT LAWFULLY
+BE EXCLUDED.
+
+9. Interpretation
+
+This English license text controls over informal summaries or
+translations. A provision that cannot be enforced does not invalidate
+the remaining provisions to the extent they can operate lawfully.
+Failure to enforce a condition once is not a waiver of that condition.
+All rights not expressly granted are reserved.

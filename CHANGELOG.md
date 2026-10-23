@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.1 — 2026-10-23
+
+- Added the custom Volumaty Community License 1.0 and an English licensing guide.
+- Company use/development, regardless of Company size, requires prior written permission; selling original or modified software or charging for access also requires permission.
+- Added a licensing-request issue form and clarified the third-party license boundary.
+- Bundled the project license in both the EXE and portable ZIP, with an archive regression check.
+- No audio, keyboard, startup or settings behavior changed from 2.1.0.
+
 ## 2.1.0 — 2026-10-23
 
 ### Added

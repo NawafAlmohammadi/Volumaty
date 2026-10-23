@@ -1,31 +1,27 @@
-# Release verification â€” 2.1.0
+# Release verification - 2.1.1
 
-Validated on Windows 11 x64 on 2026-10-23, with Python 3.13.11 and PyInstaller 6.19.0.
+Validated on Windows 11 x64 on 2026-10-23 with Python 3.13.11 and PyInstaller 6.19.0.
 
 ## Automated regression checks
 
-`python -m unittest discover -s tests -v` â€” **38 tests passed**.
+`python -m unittest discover -s tests -v`: **39 tests passed**. The 2.1.1 update adds a release-archive check for LICENSE and LICENSING.md. The 38 runtime regression tests are unchanged from 2.1.0.
 
-Coverage includes settings migration and atomic replacement, backup/recovery, malformed/oversized import rejection, shortcut conflicts, capture timeout/repeats, physical-key release order, left/right modifiers, expired audio sessions, ordered batches, unavailable-device backoff, Windows startup command construction and temporary registration/removal, and failed tray-shutdown recovery.
-
-The Windows startup integration test uses a unique temporary Run entry and removes it. It does not alter the existing Volumaty startup entry.
+Coverage includes atomic storage, legacy migration, malformed/oversized import rejection, backups, shortcut conflicts, capture timeout/repeats, physical-key releases, left/right modifiers, expired sessions, ordered audio batches, unavailable-device backoff, temporary Windows startup registration/removal and failed tray-shutdown recovery. The startup integration test uses and removes a uniquely named temporary entry; the existing Volumaty startup entry is preserved.
 
 ## Real Windows audio check
 
-`python tests/windows_audio_smoke.py` â€” six checks passed: slider set to 40%, media-key callback up to 45%, down to 40%, mute, paused-key pass-through and worker shutdown. The test creates a silent session in its own process and restores its state before exit.
+The 2.1.0 runtime passed six test-owned silent-session checks: slider set to 40%, media callback up to 45%, down to 40%, mute, paused-key pass-through and worker shutdown. Runtime audio behavior is unchanged in the license-only 2.1.1 update.
 
 ## Independent review
 
-A separate read-only reviewer examined the runtime and tests. Four Important findings were reproduced with failing regressions and fixed: unsuccessful tray shutdown stopping the UI pump, modifier-dependent key names preventing release, capture of a previously held key leaving routing state behind, and an expired first session in single-session mode. The physical-key fix also handles left/right Ctrl sharing a Windows scan code. The complete suite passed after the fix pass.
+For 2.1.0, a separate read-only reviewer identified four Important runtime cases. Each was reproduced with a failing regression and fixed: unsuccessful tray shutdown stopping the UI pump, modifier-dependent key names preventing release, capture of a previously held key leaving routing state, and expired first-session selection. The physical-key fix also covers left/right Ctrl sharing a scan code. The full suite passes with these fixes.
 
-## Packaged application
+For 2.1.1, a separate read-only policy-consistency review checked LICENSE, the licensing guide, README, contribution guidance and request form against the owner's requirements. Two wording issues were corrected: non-Company organizations remain eligible under the default grant, and redistribution safeguards also apply by default to separately permitted distributions. Contributor ownership is retained; no broader relicensing permission is silently taken. This is not a legal enforceability opinion.
 
-- Single-file Windows EXE built successfully.
-- Packaged diagnostics reported version 2.1.0, a frozen runtime and working audio-session access.
-- Background startup showed no main window.
-- A second launch reopened one existing mixer window.
-- UI checks used a separate settings profile; regular user settings and the older desktop release were preserved.
+## Packaging checks
 
-## Limits of verification
+The EXE and portable ZIP include the project license, licensing guide and unchanged third-party notices. Before publication, archive inspection confirmed byte-for-byte matches for LICENSE and LICENSING.md inside the 2.1.1 EXE and ZIP, all published asset checksums matched, and packaged diagnostics confirmed version 2.1.1 with a frozen runtime. Background startup, second-launch reopening and mixer/settings layout were checked for the 2.1.0 runtime using an isolated profile. Existing settings and earlier desktop versions are preserved.
 
-Physical knob compatibility and startup after a fresh Windows sign-in require a local-user trial. Device reconnection is covered with controlled simulated failures, not physical device unplugging. No hosted CI run was performed for this release; a build/release workflow template is included under `docs/workflows/`. The executable is unsigned.
+## Verification limits
+
+Physical knob compatibility and startup after a fresh Windows sign-in require a local trial. Device reconnection is covered with simulated failures, not physical unplugging. No hosted CI run was performed; a template is included under `docs/workflows/`. The executable is unsigned. The custom license has not been reviewed by legal counsel.

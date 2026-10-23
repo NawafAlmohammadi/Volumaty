@@ -1,0 +1,36 @@
+name: Licensing permission request
+description: Request permission for Company use or selling Volumaty.
+title: "[License]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every Company requires prior written permission, regardless of size.
+        Selling original or modified copies, or charging for access, requires permission for everyone.
+        This issue is public. Do not post private contracts, billing details, or other sensitive information.
+        Submitting a request does not grant permission; wait for explicit written approval from NawafAlmohammadi.
+  - type: input
+    id: requester
+    attributes:
+      label: Requester
+      description: Your GitHub username or business name. Do not include private identifiers.
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Permission requested
+      options:
+        - Company use or development
+        - Sale, paid distribution or paid access
+        - Both Company use and sale
+        - Other organization or licensing question
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed use
+      description: Describe the intended use, whether modifications are planned, and any distribution or paid offering.
+    validations:
+      required: true
